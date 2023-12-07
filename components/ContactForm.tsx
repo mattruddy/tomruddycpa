@@ -29,17 +29,12 @@ export const SERVICES: readonly SERVICE_TYPE[] = [
   "Free QuickBooks Training",
 ];
 
-export const CONTACT_TYPES: readonly string[] = ["In Person", "Virtual (Zoom)"];
-
 const ContactFormSchema = Yup.object().shape({
   name: Yup.string().required("name is required"),
   email: Yup.string().email().required("email is required"),
   phoneNumber: Yup.string()
     .matches(phoneRegExp, "phone number is not valid")
     .required("phone number is required"),
-  contact: Yup.string()
-    .oneOf(CONTACT_TYPES)
-    .required("contact type is required"),
   service: Yup.string().oneOf(SERVICES).required("service is required"),
 });
 interface ContactFormProps {
@@ -53,21 +48,13 @@ export const ContactForm = ({ defaultService }: ContactFormProps) => {
       name: "",
       email: "",
       phoneNumber: "",
-      contact: "",
       service: defaultService ?? "",
       taxType: undefined,
     },
     validateOnBlur: false,
     validateOnChange: false,
     validationSchema: ContactFormSchema,
-    onSubmit: async ({
-      email,
-      contact,
-      service,
-      phoneNumber,
-      name,
-      taxType,
-    }) => {
+    onSubmit: async ({ email, service, phoneNumber, name, taxType }) => {
       gaEvent("consultation", {
         event_category: "consultation",
         event_label: "Consultation Booked",
@@ -76,7 +63,6 @@ export const ContactForm = ({ defaultService }: ContactFormProps) => {
         method: "POST",
         body: JSON.stringify({
           email: email,
-          contact: contact,
           service: service,
           name: name,
           phoneNumber: phoneNumber,
@@ -96,7 +82,7 @@ export const ContactForm = ({ defaultService }: ContactFormProps) => {
       } else {
         toast({
           title: "Error Sending Message",
-          description: "Please send an email directly to matt@mjrgroupllc.com",
+          description: "Please send an email directly to trcpa63@aol.com",
           status: "error",
         });
       }
@@ -135,22 +121,6 @@ export const ContactForm = ({ defaultService }: ContactFormProps) => {
           value={formik.values.phoneNumber}
         />
         <FormErrorMessage>{formik.errors.phoneNumber}</FormErrorMessage>
-      </FormControl>
-      <FormControl mb="20px" isInvalid={!!formik.errors.contact}>
-        <FormLabel>Contact Preference</FormLabel>
-        <Select
-          name="contact"
-          onChange={formik.handleChange}
-          value={formik.values.contact}
-          placeholder="Select a type"
-        >
-          {CONTACT_TYPES.map((type) => (
-            <option key={type} value={type}>
-              {type}
-            </option>
-          ))}
-        </Select>
-        <FormErrorMessage>{formik.errors.contact}</FormErrorMessage>
       </FormControl>
       <FormControl mb="20px" isInvalid={!!formik.errors.service}>
         <FormLabel>Service Needed</FormLabel>

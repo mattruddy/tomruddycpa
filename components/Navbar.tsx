@@ -78,7 +78,7 @@ export default function WithSubnavigation() {
             display={{ base: "none", md: "flex" }}
             size="md"
           >
-            MJR GROUP
+            TRCPA
           </Heading>
         </Flex>
       </Flex>
@@ -320,10 +320,6 @@ const NAV_ITEMS: Array<NavItem> = [
         href: "/quickbooks",
       },
     ],
-  },
-  {
-    label: "About",
-    href: "/about",
   },
   {
     label: "Contact Us",

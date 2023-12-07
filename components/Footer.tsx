@@ -47,16 +47,16 @@ export default function SmallWithSocial() {
         <HStack flexDir={{ base: "column", sm: "row" }}>
           <HStack>
             <Text as="b">Phone Number</Text>
-            <Link href="tel:732-814-3113">732-814-3113</Link>
+            <Link href="tel:732-779-1590">732-779-1590</Link>
           </HStack>
           <Dot display={{ base: "none", sm: "block" }} />
           <HStack>
             <Text as="b">Email</Text>
-            <Link href="mailto:matt@mjrgroupllc.com">matt@mjrgroupllc.com</Link>
+            <Link href="mailto:trcpa63@aol.com">trcpa63@aol.com</Link>
           </HStack>
         </HStack>
       </VStack>
-      <Text>© 2023 MJR Group LLC. All rights reserved</Text>
+      <Text>© 2023 TRCPA LLC. All rights reserved</Text>
     </VStack>
   );
 }

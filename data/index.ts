@@ -2,9 +2,12 @@ export const PAGE_DATA = {
   page: {
     home: {
       sectionOne: {
-        title: "Tax Services in Ocean & Hudson County NJ",
-        subTitle:
-          "Local family operated tax business focusing on individuals and ensuring their financial success",
+        title: "Tax Services in Ocean County NJ",
+        subTitle: `We truly believe that each business should receive
+          individualized attention. It is our passion to help your
+          business grow and flourish because we understand that the
+          relationship between an accountant and their client is truly
+          symbiotic. `,
       },
       sectionTwo: {
         title: "What Services We Offer",
@@ -149,14 +152,14 @@ export const PAGE_DATA = {
       },
     },
     about: {
-      title: "About MJR Group",
+      title: "About TRCPA",
       sectionOne: {
         imageSrc: "/logo/logo.png",
         body: `
-        MJR Group was founded by Matt Ruddy, an Enrolled Agent (EA), who launched the company as a tax firm specializing primarily in tax representation. Matt's expertise in taxation was cultivated during his early career while working alongside his father, Tom Ruddy, a well-established Certified Public Accountant (CPA) who operates his own tax firm TRCPA located in Toms River, NJ and primarily focuses on tax preparation.
+        TRCPA was founded by Matt Ruddy, an Enrolled Agent (EA), who launched the company as a tax firm specializing primarily in tax representation. Matt's expertise in taxation was cultivated during his early career while working alongside his father, Tom Ruddy, a well-established Certified Public Accountant (CPA) who operates his own tax firm TRCPA located in Toms River, NJ and primarily focuses on tax preparation.
         <br/>
         <br/>
-        TRCPA & MJR Group decided to form a partnership, expanding the company's services to include both tax representation and tax preparation. This partnership brought together a wealth of experience, enhancing the business's ability to provide comprehensive solutions to individuals and businesses, tailored to their unique tax and financial requirements.
+        TRCPA & TRCPA decided to form a partnership, expanding the company's services to include both tax representation and tax preparation. This partnership brought together a wealth of experience, enhancing the business's ability to provide comprehensive solutions to individuals and businesses, tailored to their unique tax and financial requirements.
         `,
       },
       sectionTwo: {
