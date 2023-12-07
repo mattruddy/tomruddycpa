@@ -151,23 +151,5 @@ export const PAGE_DATA = {
         body: "We're here to help small businesses with free QuickBooks training. We understand the importance of keeping your financial records organized for tax time. In this program, we'll show you how to use QuickBooks to make your financial management easier. Join us, and we'll help you take control of your business finances for a smooth tax season.",
       },
     },
-    about: {
-      title: "About TRCPA",
-      sectionOne: {
-        imageSrc: "/logo/logo.png",
-        body: `
-        TRCPA was founded by Matt Ruddy, an Enrolled Agent (EA), who launched the company as a tax firm specializing primarily in tax representation. Matt's expertise in taxation was cultivated during his early career while working alongside his father, Tom Ruddy, a well-established Certified Public Accountant (CPA) who operates his own tax firm TRCPA located in Toms River, NJ and primarily focuses on tax preparation.
-        <br/>
-        <br/>
-        TRCPA & TRCPA decided to form a partnership, expanding the company's services to include both tax representation and tax preparation. This partnership brought together a wealth of experience, enhancing the business's ability to provide comprehensive solutions to individuals and businesses, tailored to their unique tax and financial requirements.
-        `,
-      },
-      sectionTwo: {
-        title: "Mission",
-        body: `
-        Our mission is to help people and businesses with their taxes, making it simple and accurate. We want to build trust and long-lasting relationships by giving expert advice to minimize taxes and follow the rules.
-        `,
-      },
-    },
   },
 };

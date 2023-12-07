@@ -61,25 +61,20 @@ export default function WithSubnavigation() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            <Button as={Link} href="/" variant={"link"}>
-              <Image alt="logo-mjrgroup" h="50" w="50" src="/logo/logo.png" />
-            </Button>
+            <Heading
+              as={Link}
+              _hover={{ textDecor: "none" }}
+              href="/"
+              display={{ base: "none", md: "flex" }}
+              size="md"
+            >
+              TRCPA
+            </Heading>
           </Text>
 
           <Center display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Center>
-        </Flex>
-        <Flex>
-          <Heading
-            as={Link}
-            _hover={{ textDecor: "none" }}
-            href="/"
-            display={{ base: "none", md: "flex" }}
-            size="md"
-          >
-            TRCPA
-          </Heading>
         </Flex>
       </Flex>
 
